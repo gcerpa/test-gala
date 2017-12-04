@@ -1,0 +1,37 @@
+<ion-menu [content]="mainContent">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>
+        Menu
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content id="side-menu21">
+    <ion-list id="menu-list2">
+      <ion-item color="none" id="menu-list-item2">
+        <ion-avatar item-left>
+          <img />
+        </ion-avatar>
+        <h2>
+          Nombre
+        </h2>
+      </ion-item>
+    </ion-list>
+    <ion-list id="menu-list5">
+      <ion-item color="none" menuClose="" on-click="goToPerfil()" id="menu-list-item6">
+        Perfil
+        <ion-icon name="person" item-right></ion-icon>
+      </ion-item>
+      <ion-item color="none" menuClose="" on-click="goToCerrar()" id="menu-list-item7">
+        Cerrar sesión
+        <ion-icon name="log-out" item-right></ion-icon>
+      </ion-item>
+      <ion-item color="none" menuClose="" on-click="goToAyuda()" id="menu-list-item8">
+        Ayuda
+        <ion-icon name="help-circle" item-right></ion-icon>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<ion-nav #mainContent [root]="rootPage"></ion-nav>
